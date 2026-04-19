@@ -1,0 +1,21 @@
+{
+  "name": "outlook-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Outlook Mail Organizer using TypeScript + Microsoft Graph API",
+  "type": "module",
+  "scripts": {
+    "organize": "tsx src/organizer.ts",
+    "organize:dry": "tsx src/organizer.ts --dry-run",
+    "auth": "tsx src/auth.ts --setup",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}

@@ -1,24 +1,26 @@
+# Node
+node_modules/
+npm-debug.log*
+.npm/
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
+# TypeScript build
+dist/
+*.tsbuildinfo
 
-# Environments
+# Environment / secrets
 .env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+.env.*
 
-# O365 Token (Keep this local only, secret in GitHub Actions)
-o365_token.txt
+# Graph API token (keep local only, use GRAPH_TOKEN_JSON secret in CI)
+token.json
 
-# Organizer state and logs
-.organizer_state.json
-organizer.log
+# Run logs
+logs/
 
-# VS Code
+# Editor
 .vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
